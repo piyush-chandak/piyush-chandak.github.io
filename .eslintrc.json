@@ -1,0 +1,21 @@
+// 0 = off, 1 = warn, 2 = error 
+{
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+      "jsx": true
+      },
+      "no-redeclare": 1
+  },
+  "rules": {
+      "semi": 1,
+      "quotes": 0,
+      "no-trailing-spaces": 0,
+      "eol-last": 0,
+      "no-unused-vars": 0,
+      "no-underscore-dangle": 0,
+      "no-alert": 0,
+      "no-lone-blocks": 0
+  }
+}
