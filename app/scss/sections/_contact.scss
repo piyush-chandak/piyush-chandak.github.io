@@ -1,0 +1,113 @@
+@import '../variables';
+
+#contact {
+  .social-link-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+    .heading {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+
+      @media (max-width: $sm-max) {
+        display: none;
+      }
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      @media (max-width: $sm-max) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .item {
+        margin-bottom: 20px;
+      }
+    }
+    
+    .item {
+      margin-bottom: 25px;
+      position: relative;
+      white-space: nowrap;
+
+      @media (max-width: $sm-max) {
+        display: flex;
+        justify-content: end;
+        margin: 0 20px;
+      }
+    }
+
+    .link {
+      align-items: center;
+      color: $default-text;
+      display: flex;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: capitalize;
+
+      @media (max-width: $sm-max) {
+        flex-direction: column;
+      }
+    }
+
+    .social-link {
+      align-items: center;
+      background: $grey-section;
+      border-radius: 50px;
+      color: $default-text;
+      display: flex;
+      font-size: 20px;
+      overflow: hidden;
+      margin-right: 15px;
+      padding: 7px 13px;
+      text-decoration: none;
+      transition: 0.3s;
+
+      @media (max-width: $sm-max) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .divider-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    @media (max-width: $sm-max) {
+      flex-direction: row;
+    }
+
+    .divider {
+      border-right: 1px solid $default-muted-text;
+      height: 42%;
+    
+      @media (max-width: $sm-max) {
+        border-right: 0;
+        border-top: 1px solid $default-muted-text;
+        width: 42%;
+        height: auto;
+      }
+    }
+  }
+
+  .contact-form {
+    @media (max-width: $sm-max) {
+      margin-top: 20px;
+    }
+    .message {
+      min-height: 150px;
+    }
+  }
+}

@@ -1,3 +1,31 @@
-<script id="header" type="text/x-mustache-template">
-  <h5>Ola from Piyush!</h5>
+<script id="header-template" type="text/x-mustache-template">
+  <div class="stickybar">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="logo" style="background-image: url('{{profileImage}}')"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar" class="navbar nav-menu">
+    <div class="nav-container">
+        <ul class="nav-links">
+          {{#sections}}
+            <li>
+              <a href="{{id}}" class="link scrollto" data-id="{{id}}">
+                <i class="icon {{icon}}"></i>
+                <span>{{name}}</span>
+              </a>
+            </li>
+          {{/sections}}
+        </ul>
+      </div>
+  </nav>
+
+  <a href="#" class="back-to-top btn btn-primary">
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
 </script>

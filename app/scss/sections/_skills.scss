@@ -1,0 +1,27 @@
+@import '../variables';
+
+#skills {
+  .techology-container {
+    .heading {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .icon {
+      background-size: cover;
+      background-repeat: repeat;
+      margin: 10px 15px;
+      padding: 30px;
+      transition: all 0.3s ease-in-out;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

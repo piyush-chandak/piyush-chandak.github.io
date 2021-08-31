@@ -1,0 +1,215 @@
+@import '../variables';
+
+#header {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $sm-min) {
+    min-height: auto !important;
+  }
+
+  .stickybar {
+    background: $primary-section;
+    display: none;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    @media (max-width: $md-max) {
+      display: block;
+    }
+
+    .logo {
+      background-color: $white-600;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 50px;
+      padding: 23px;
+      transition: all 1s ease-in;
+
+      &.hide {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+      }
+    }
+
+    .hamburger {
+      cursor: pointer;
+      z-index: 3;
+
+      .line {
+        width: 30px;
+        height: 5px;
+        background: $white-section;
+        margin: 5px;
+        @include animation(all, 0.3s, ease-in-out);
+        
+      }
+
+      &.is-active .line:nth-child(2){
+        opacity: 0;
+      }
+
+      &.is-active .line:nth-child(1){
+        @include transform-rotate(translateY(10px), rotate(45deg));
+      }
+
+      &.is-active .line:nth-child(3){
+        @include transform-rotate(translateY(-10px), rotate(-45deg));
+      }
+    }
+  }
+
+  #navbar {
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+
+    @media (min-width: $sm-min) {
+      bottom: 0;
+      left: 0;
+      overflow: none;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+    }
+
+    @media (max-width: $md-max) {
+      @include browser-specfic('clip-path', circle(100px at 100% -25%));
+      background: $primary-section;
+      position: fixed;
+      transition: all 1s ease-out;
+      pointer-events: none;
+      height: 100vh;
+      width: 100%;
+    }
+
+    &.show {
+      @include browser-specfic('clip-path', circle(1200px at 100% -25%));
+      pointer-events: all;
+    }
+  }
+
+  .nav-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .nav-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      > li {
+        margin-bottom: 15px;
+        position: relative;
+        white-space: nowrap;
+      }
+    }
+
+    .nav-container {
+      @media (max-width: $md-max) {
+        width: 100%;
+      }
+    }
+
+    .link,
+    .link:focus {
+      @include browser-specfic('box-shadow', $default-box-shadow);
+      align-items: center;
+      background: $grey-section;
+      border-radius: 50px;
+      color: $white-text;
+      display: flex;
+      font-size: 15px;
+      height: 50px;
+      overflow: hidden;
+      padding: 10px 15px;
+      width: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+
+      @media (max-width: $md-max) {
+        @include browser-specfic('box-shadow', none);
+        background: inherit;
+        color: $default-text;
+        font-size: 20px;
+        justify-content: center;
+        height: auto;
+        margin: 10px auto;
+        width: 100%;
+      }
+
+      .icon {
+        color: $default-text;
+        font-size: 20px;
+
+        @media (max-width: $md-max) {
+          display: none;
+        }
+      }
+
+      span {
+        display: none;
+
+        @media (max-width: $md-max) {
+          color: $white-text;
+          display: block;
+        }
+      }
+    }
+
+    .link:hover,
+    .link.active,
+    .link.active:focus,
+    li:hover > .link {
+      @media (min-width: $sm-min) {
+        background: $primary-section;
+        color: $white-text;
+      }
+
+      .icon {
+        color: $white-text;
+      }
+    }
+
+    .link:hover {
+      width: 100%;
+
+      span {
+        color: $white-text;
+        display: block;
+        padding: 0 5px 0 7px;
+      }
+    }
+  }
+
+  .back-to-top {
+    border-radius: 50%;
+    bottom: 15px;
+    font-size: 20px;
+    opacity: 0;
+    padding: 0 7px;
+    position: fixed;
+    right: 15px;
+    transition: all 0.4s;
+    visibility: hidden;
+    z-index: 900;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &.hidden {
+      opacity: 0;
+      transition: all 1.2s;
+    }
+  }
+}

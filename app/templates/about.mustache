@@ -1,0 +1,36 @@
+<script id="about-template" type="text/x-mustache-template">
+  <div class="section pb-3">
+    <div class="section-body">
+      <div class="section-highlighter left">
+        <div class="container">
+          <div class="col-sm-4 m-auto mb-3">
+            <div class="profile-photo" style="background-image: url('{{profileImage}}')"></div>
+          </div>
+
+          <div class="text-center my-4">
+            <h1 class="name">{{name}}</h1>
+            <p class="sub-text highlight-primary mt-3">
+              {{#tags}}
+                <span class="tag">{{.}}</tag>
+              {{/tags}}
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-sm-7 about-content">
+              <p>
+                Ambitious, Devotion, Self motivated full stack developer with experience of different technologies and good knowledge of Design Pattern, Data Structures and Algorithm.
+              </p>
+              <p>
+                I am having {{yearsMsg}} of professional experience and always trying to be updated by learning and building things.
+              </p>
+              <p>
+                I like to have challenging environment which can nurish and can increase my knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+  </div>
+</script>

@@ -1,0 +1,11 @@
+@import '../variables';
+
+#footer {
+  margin: 15px auto;
+
+  .love {
+    color: $love-color;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+}

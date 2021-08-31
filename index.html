@@ -1,19 +1,272 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Piyush Chandak</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script><link rel="icon" href="images/icon.png" type="image/png" sizes="16x16"><base href="./"></head><body><div class="container-fluid" id="root"></div> 
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>𝗣𝗶𝘆𝘂𝘀𝗵 𝗖𝗵𝗮𝗻𝗱𝗮𝗸</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script><link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'><link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"><link rel="icon" href="images/icon.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="images/icon.png"><link rel="apple-touch-icon" sizes="180x180" href="images/icon.png"><link rel="mask-icon" href="images/icon.png" color="#5bbad5"><meta name="msapplication-TileColor" content="#ffffff"><meta name="theme-color" content="#ffffff"><meta property="og:title" content="Piyush Chandak"><meta property="og:image" content="images/icon.png"><meta property="og:description" content="Full Stack Developer"><meta property="og:type" content="website"><meta property="og:url" content="https://piyush-chandak.github.io"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="twitter:card" content="summary_medium_image"><meta property="twitter:title" content="Piyush Chandak"><meta property="twitter:description" content="Full Stack Developer"><meta property="twitter:image" content="images/icon.png"><base href="./"></head><body><header id="header"></header><main><section id="about"></section><section id="skills"></section><section id="experience"></section><section id="projects"></section><section id="contact"></section></main><footer id="footer"></footer> 
   <!-- inject:musatche -->
-  <script id="footer" type="text/x-mustache-template">
-  <h1>Footer</h1>
-</script>
-  <script id="header" type="text/x-mustache-template">
-  <h5>Ola from Piyush!</h5>
+  <script id="about-template" type="text/x-mustache-template">
+  <div class="section pb-3">
+    <div class="section-body">
+      <div class="section-highlighter left">
+        <div class="container">
+          <div class="col-sm-4 m-auto mb-3">
+            <div class="profile-photo" style="background-image: url('{{profileImage}}')"></div>
+          </div>
+
+          <div class="text-center my-4">
+            <h1 class="name">{{name}}</h1>
+            <p class="sub-text highlight-primary mt-3">
+              {{#tags}}
+                <span class="tag">{{.}}</tag>
+              {{/tags}}
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-sm-7 about-content">
+              <p>
+                Ambitious, Devotion, Self motivated full stack developer with experience of different technologies and good knowledge of Design Pattern, Data Structures and Algorithm.
+              </p>
+              <p>
+                I am having {{yearsMsg}} of professional experience and always trying to be updated by learning and building things.
+              </p>
+              <p>
+                I like to have challenging environment which can nurish and can increase my knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+  </div>
 </script>
 
+  <script id="contact-template" type="text/x-mustache-template">
+  <div class="section pb-4">
+    <div class="section-header">
+      <div class="section-sub-heading"> CONTACT ME</div>
+      <div class="section-heading"> Let's Talk </div>
+    </div>
+    <div class="section-body">
+      <div class="section-highlighter right">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 order-md-4">
+              <form role="form" class="contact-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control message" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary btn-sm" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-sm-1 order-md-3 py-2">
+              <div class="divider-wrapper">
+                <div class="divider"></div>
+                <div class="p-2 strong">OR</div>
+                <div class="divider"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 order-md-2">
+              <div class="social-link-wrapper">
+                <div class="heading">Social Links</div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <ul class="list">
+                    {{#socialLinks}}
+                      <li class="item">
+                        <a href="{{url}}" class="link">
+                          <div class="social-link">
+                            <i class="{{icon}}"></i>
+                          </div> {{label}}
+                        </a>
+                      </li>
+                    {{/socialLinks}}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-1 order-md-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+  <script id="experience-template" type="text/x-mustache-template">
+  <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 155 1440 80">
+      <path fill-opacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
+    </svg>
+  </div>
+  <div class="section light-bg py-0">
+    <div class="section-header">
+      <div class="section-sub-heading"> Experience </div>
+      <div class="section-heading"> My Timeline </div>
+    </div>
+
+    <div class="section-body">
+      <div class="container">
+        <div class="row timeline">
+          {{#experience}}
+            <div class="col-sm-6 mb-3">
+              <div class="timeline-title">{{heading}}</div>
+              {{#items}}
+                <div class="timeline-item">
+                  <div class="timeline-item-title">{{title}}</div>
+                  <div class="timeline-item-time">{{startTime}} - {{endTime}}</div>
+                  <div class="timeline-item-place">
+                    {{place}}
+                  </div>
+                  <p>
+                    {{{information}}}
+                  </p>
+                </div>
+              {{/items}}
+            </div>
+          {{/experience}}
+        </div>
+        <div class="text-center mt-3">
+          <a href="./documents/piyush_chandak.pdf" class="btn btn-primary btn-sm" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+      <path fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,53.3C480,32,600,32,720,37.3C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+  </div>
+</script>
+
+  <script id="footer-template" type="text/x-mustache-template">
+  <hr class="hr">
+  <div class="no-select text-center">
+    Crafted with <span class="love"><i class="ri-heart-3-fill"></i></span> by Piyush
+  </div>
+</script>
+  <script id="header-template" type="text/x-mustache-template">
+  <div class="stickybar">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="logo" style="background-image: url('{{profileImage}}')"></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar" class="navbar nav-menu">
+    <div class="nav-container">
+        <ul class="nav-links">
+          {{#sections}}
+            <li>
+              <a href="{{id}}" class="link scrollto" data-id="{{id}}">
+                <i class="icon {{icon}}"></i>
+                <span>{{name}}</span>
+              </a>
+            </li>
+          {{/sections}}
+        </ul>
+      </div>
+  </nav>
+
+  <a href="#" class="back-to-top btn btn-primary">
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
+</script>
+
+  <script id="projects-template" type="text/x-mustache-template">
+  <div class="section pb-0">
+    <div class="section-header">
+      <div class="section-sub-heading"> Projects </div>
+      <div class="section-heading"> My Work </div>
+    </div>
+
+    <div class="section-body pb-0">
+      <div class="container projects-container">
+        {{#workItems}}
+          <div class="work-item">
+            <div class="work-title">
+              <span class="name">{{name}}</span>
+              {{#role}}<span class="role">({{role}})</span>{{/role}}
+            </div>
+            <div class="technologies">
+              {{#technologies}}
+              <span class="technology">
+                {{.}}
+              </span>
+              {{/technologies}}
+            </div>
+            <div class="detail my-2">
+              {{detail}}
+            </div>
+            <ul class="points">
+            {{#works}}
+              <li>{{.}}</li>
+            {{/works}}
+            </ul>
+            <hr class="pt-1"/>
+          </div>
+        {{/workItems}}
+      </div>
+    </div>
+  </div>
+</script>
+
+  <script id="skills-template" type="text/x-mustache-template">
+  <div class="section pb-3">
+    <div class="section-header">
+      <div class="section-sub-heading"> SKILLS </div>
+      <div class="section-heading"> My Learning </div>
+    </div>
+
+    <div class="section-body">
+     <div class="container techology-container">
+        <div class="d-flex flex-wrap justify-content-center">
+          {{#languages}}
+            <div class="icon tooltip" data-title="{{title}}" style="background-image: url('{{url}}')"></div>
+          {{/languages}}
+        </div>
+      </div>
+
+      <div class="container techology-container d-none">
+        {{#technolgies}}
+          <div class="mb-3">
+            <div class="heading">
+              {{name}}
+            </div>
+
+            <div class="d-flex flex-wrap">
+              {{#languages}}
+                <div class="icon tooltip" data-title="{{title}}" style="background-image: url('{{url}}')"></div>
+              {{/languages}}
+            </div>
+          </div>
+        {{/technolgies}}
+      </div>
+    </div>
+  </div>
+</script>
   <!-- endinject -->
    
   <!-- inject:css -->
-  <link rel="stylesheet" href="../public/css/style-7318194103122564.min.css">
+  <link rel="stylesheet" href="../public/css/style-27862246358813425.min.css">
   <!-- endinject -->
    
   <!-- inject:js -->
-  <script src="../public/js/bundle-7318194103122564.min.js"></script>
+  <script src="../public/js/bundle-27862246358813425.min.js"></script>
   <!-- endinject -->
   </body></html>

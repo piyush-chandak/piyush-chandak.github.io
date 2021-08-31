@@ -1,0 +1,67 @@
+@import '../variables';
+@import '../mixins';
+
+.btn {
+  @include browser-specfic('box-shadow', '0 2px 0 0 rgb(255 255 255 / 6%) inset, 0 2px 3px 0 rgb(0 0 0 / 20%)');
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+}
+
+.btn-sm {
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 4px 16px;
+}
+
+.btn-primary {
+  @include browser-specfic('box-shadow', $default-box-shadow);
+  color: $white-text;
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white-text;
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: $white-text;
+  background-color: $primary;
+  border-color: $primary;
+
+  &:focus {
+    @include browser-specfic('box-shadow', $default-box-shadow);
+  }
+}

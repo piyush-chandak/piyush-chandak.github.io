@@ -1,0 +1,56 @@
+@import '../variables';
+
+@import './button';
+@import './tooltip';
+@import './section';
+@import './typography';
+
+body {
+  font-family: 'Poppins';
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.no-select {
+  @include no-select();
+}
+
+.section-highlighter {
+  padding: 30px 0;
+  position: relative;
+
+  &::before {
+    background: $white-600;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 64.5%;
+    z-index: -1;
+
+    @media (max-width: $sm-max) {
+      width: 90%;
+    }
+  }
+
+  &.left {
+    &::before {
+      border-radius: 0 90px 90px 0;
+      left: 0;
+    }
+  }
+
+  &.right {
+    &::before {
+      border-radius: 90px 0 0 90px;
+      right: 0;
+    }
+  }
+}
+
+.light-bg {
+  background-color: $white-200;
+}

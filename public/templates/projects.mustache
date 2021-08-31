@@ -1,0 +1,37 @@
+<script id="projects-template" type="text/x-mustache-template">
+  <div class="section pb-0">
+    <div class="section-header">
+      <div class="section-sub-heading"> Projects </div>
+      <div class="section-heading"> My Work </div>
+    </div>
+
+    <div class="section-body pb-0">
+      <div class="container projects-container">
+        {{#workItems}}
+          <div class="work-item">
+            <div class="work-title">
+              <span class="name">{{name}}</span>
+              {{#role}}<span class="role">({{role}})</span>{{/role}}
+            </div>
+            <div class="technologies">
+              {{#technologies}}
+              <span class="technology">
+                {{.}}
+              </span>
+              {{/technologies}}
+            </div>
+            <div class="detail my-2">
+              {{detail}}
+            </div>
+            <ul class="points">
+            {{#works}}
+              <li>{{.}}</li>
+            {{/works}}
+            </ul>
+            <hr class="pt-1"/>
+          </div>
+        {{/workItems}}
+      </div>
+    </div>
+  </div>
+</script>

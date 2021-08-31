@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "- https://www.freecodecamp.org/news/super-simple-gulp-tutorial-for-beginners-45141974bfe8/ - https://zetcode.com/gulp/getting-started/ - https://css-tricks.com/gulp-for-beginners/",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/piyush-chandak/piyush-chandak.github.io.git"

@@ -1,0 +1,65 @@
+@import '../variables';
+
+#projects {
+  
+  .work-item {
+    padding: 10px 0;
+    position: relative;
+
+    .work-title {
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      
+      .name {
+        color: $primary;
+      }
+
+      .role {
+        font-size: 16px;
+      }
+    }
+
+    .technologies {
+      display: inline-block;
+      vertical-align: middle;
+
+      .technology {
+        background-color: $white-200;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 5px;
+        padding: 5px;
+        text-transform: capitalize;
+      }
+    }
+
+    .detail {
+      letter-spacing: 0.7px;
+    }
+
+    .points {
+      font-size: 14px;
+      list-style: none;
+      padding-left: 30px;
+
+      li {
+        position: relative;
+        margin: 5px 0;
+    
+        &:before {
+          color: $primary-text;
+          content: "\ED4A";
+          display: block;
+          font-family: remixicon;
+          font-size: 16px;
+          left: -25px;
+          margin: 0 6px 0 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../variables';
+
+#about {
+  padding-top: 130px;
+
+  @media (max-width: $sm-max) {
+    padding-top: 60px;
+  }
+
+  .section-highlighter {
+    &::before {
+      width: 85%;
+
+      @media (max-width: $sm-max) {
+        width: 97%;
+      }
+    }
+  }
+
+  .profile-photo {
+    background-color: $white-400;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px 10px 50px 10px;
+    margin: -150px auto 0 auto;
+    height: 300px;
+
+    @media (max-width: $sm-max) {
+      margin-top: -100px;
+      height: 200px;
+      width: 60%;
+    }
+  }
+
+  .about-content {
+    letter-spacing: 0.7px;
+    word-spacing: 0.2px;
+  }
+
+  .name {
+    color: $default-text;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 15px 0;
+  }
+
+  .tag {
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+}

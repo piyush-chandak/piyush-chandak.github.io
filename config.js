@@ -15,7 +15,17 @@ const PATH = {
   },
   JAVASCRIPT: {
     SOURCE: `${SOURCE_FOLDER_LOCATION}/js/**/*.js`,
-    SOURCE_FILES: [`${SOURCE_FOLDER_LOCATION}/js/page.js`, `${SOURCE_FOLDER_LOCATION}/js/script.js`],
+    SOURCE_FILES: [
+      `${SOURCE_FOLDER_LOCATION}/js/common.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/header.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/about.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/skills.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/projects.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/contact.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/experience.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/footer.js`,
+      `${SOURCE_FOLDER_LOCATION}/js/script.js`
+    ],
     DESTINATION: `${DESTINATION_FOLDER_LOCATION}/js/`,
     DESTINATION_FILES: `${DESTINATION_FOLDER_LOCATION}/js/**/*.js`,
     FILE_NAME: `bundle-${UNIQUE_BUILD_ID}.js`,

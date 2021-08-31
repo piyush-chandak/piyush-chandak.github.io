@@ -1,0 +1,45 @@
+<script id="experience-template" type="text/x-mustache-template">
+  <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 155 1440 80">
+      <path fill-opacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
+    </svg>
+  </div>
+  <div class="section light-bg py-0">
+    <div class="section-header">
+      <div class="section-sub-heading"> Experience </div>
+      <div class="section-heading"> My Timeline </div>
+    </div>
+
+    <div class="section-body">
+      <div class="container">
+        <div class="row timeline">
+          {{#experience}}
+            <div class="col-sm-6 mb-3">
+              <div class="timeline-title">{{heading}}</div>
+              {{#items}}
+                <div class="timeline-item">
+                  <div class="timeline-item-title">{{title}}</div>
+                  <div class="timeline-item-time">{{startTime}} - {{endTime}}</div>
+                  <div class="timeline-item-place">
+                    {{place}}
+                  </div>
+                  <p>
+                    {{{information}}}
+                  </p>
+                </div>
+              {{/items}}
+            </div>
+          {{/experience}}
+        </div>
+        <div class="text-center mt-3">
+          <a href="./documents/piyush_chandak.pdf" class="btn btn-primary btn-sm" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+      <path fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,53.3C480,32,600,32,720,37.3C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+  </div>
+</script>

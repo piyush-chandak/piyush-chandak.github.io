@@ -1,0 +1,32 @@
+@mixin custom-grid($gutter) {
+  .row {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+  }
+
+  [class*='col'] {
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+}
+
+@mixin animation($property, $duration, $timing-function) {
+  @include browser-specfic('transition', $property $duration $timing-function);
+}
+
+@mixin transform-rotate($translate, $rotate) {
+  @include browser-specfic('transform', $translate $rotate);
+}
+
+@mixin no-select() {
+  -webkit-touch-callout: none; // scss-lint:disable VendorPrefix // iOS Safari
+  @include browser-specfic('user-select', none);
+}
+
+@mixin browser-specfic($property, $value) {
+  -webkit-#{$property}: $value; // scss-lint:disable VendorPrefix // Safari
+  -khtml-#{$property}: $value; // scss-lint:disable VendorPrefix // Konqueror HTML
+  -moz-#{$property}: $value; // scss-lint:disable VendorPrefix // Old versions of Firefox
+  -ms-#{$property}: $value; // scss-lint:disable VendorPrefix // Internet Explorer/Edge
+  #{$property}: $value; // Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox
+}

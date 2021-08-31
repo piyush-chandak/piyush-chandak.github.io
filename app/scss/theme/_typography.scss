@@ -1,0 +1,23 @@
+@import '../variables';
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hr {
+  margin: 5px auto;
+  padding-top: 10px;
+  width: 95%;
+}
+
+.highlight-primary {
+  color: $primary-text !important;
+}

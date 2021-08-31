@@ -1,0 +1,34 @@
+<script id="skills-template" type="text/x-mustache-template">
+  <div class="section pb-3">
+    <div class="section-header">
+      <div class="section-sub-heading"> SKILLS </div>
+      <div class="section-heading"> My Learning </div>
+    </div>
+
+    <div class="section-body">
+     <div class="container techology-container">
+        <div class="d-flex flex-wrap justify-content-center">
+          {{#languages}}
+            <div class="icon tooltip" data-title="{{title}}" style="background-image: url('{{url}}')"></div>
+          {{/languages}}
+        </div>
+      </div>
+
+      <div class="container techology-container d-none">
+        {{#technolgies}}
+          <div class="mb-3">
+            <div class="heading">
+              {{name}}
+            </div>
+
+            <div class="d-flex flex-wrap">
+              {{#languages}}
+                <div class="icon tooltip" data-title="{{title}}" style="background-image: url('{{url}}')"></div>
+              {{/languages}}
+            </div>
+          </div>
+        {{/technolgies}}
+      </div>
+    </div>
+  </div>
+</script>

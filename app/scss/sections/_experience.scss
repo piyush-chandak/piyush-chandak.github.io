@@ -1,0 +1,81 @@
+@import '../variables';
+
+#experience {
+  .timeline {
+    cursor: default;
+  }
+
+  .timeline-title {
+    color: $default-text;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    
+  }
+
+  .timeline-item {
+    border-left: 2px solid $primary;
+    padding: 0 0 5px 20px;
+    position: relative;
+
+    @media (max-width: $md-max) {
+      margin-left: 10px;
+    }
+
+    &::before {
+      background: $white-section;
+      border: 2px solid $primary;
+      border-radius: 50px;
+      content: '';
+      height: 16px;
+      left: -9px;
+      position: absolute;
+      top: 0;
+      width: 16px;
+    }
+
+    .timeline-item-title {
+      color: $primary;
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .timeline-item-time {
+      background: $chip-color;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 12px;
+      margin-bottom: 5px;
+      padding: 2px 0px;
+    }
+
+    .timeline-item-place {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .wave {
+    path {
+      fill: $white-200;
+    }
+  }
+}

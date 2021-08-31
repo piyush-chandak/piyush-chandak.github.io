@@ -1,0 +1,51 @@
+@import '../variables';
+
+.section {
+  padding: 40px 0;
+
+  @media (max-width: $sm-max) {
+    padding: 25px 0;
+  }
+
+  .section-header {
+    margin-bottom: 15px;
+
+    .section-heading {
+      cursor: default;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 1px;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+  
+      &::before {
+        background: $primary;
+        bottom: -10px;
+        content: '';
+        display: block;
+        height: 3px;
+        left: calc(50% - 20px);
+        position: absolute;
+        width: 40px;
+      }
+    }
+    
+  
+    .section-sub-heading {
+      color: $default-muted-text;
+      cursor: default;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-body {
+    padding: 25px 0 20px 0;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../variables';
+
+.tooltip {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 1;
+  position: relative;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 14px;
+  word-wrap: break-word;
+  z-index: auto !important;
+
+  &::after {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    bottom: -35px;
+    color: $white-text;
+    content: attr(data-title);
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 5%);
+    visibility: hidden;
+    z-index: 50;
+  }
+
+  &:hover {
+    &::after {
+      visibility: visible;
+      z-index: 50;
+    }
+  }
+}

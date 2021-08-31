@@ -1,0 +1,66 @@
+<script id="contact-template" type="text/x-mustache-template">
+  <div class="section pb-4">
+    <div class="section-header">
+      <div class="section-sub-heading"> CONTACT ME</div>
+      <div class="section-heading"> Let's Talk </div>
+    </div>
+    <div class="section-body">
+      <div class="section-highlighter right">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 order-md-4">
+              <form role="form" class="contact-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control message" name="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary btn-sm" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-sm-1 order-md-3 py-2">
+              <div class="divider-wrapper">
+                <div class="divider"></div>
+                <div class="p-2 strong">OR</div>
+                <div class="divider"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 order-md-2">
+              <div class="social-link-wrapper">
+                <div class="heading">Social Links</div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <ul class="list">
+                    {{#socialLinks}}
+                      <li class="item">
+                        <a href="{{url}}" class="link">
+                          <div class="social-link">
+                            <i class="{{icon}}"></i>
+                          </div> {{label}}
+                        </a>
+                      </li>
+                    {{/socialLinks}}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-1 order-md-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
