@@ -87,7 +87,7 @@ window.common = function() {
       this.setLocationHash('');
     },
     profileImageURL() {
-      return '../../images/profile.png';
+      return '../../images/profile.jpg';
     }
   }
 }();

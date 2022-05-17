@@ -23,27 +23,23 @@
       padding: 0;
       list-style: none;
 
-      @media (max-width: $sm-max) {
+      // @media (max-width: $sm-max) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-      }
-
-      .item {
-        margin-bottom: 20px;
-      }
+      // }
     }
     
     .item {
-      margin-bottom: 25px;
+      // margin-bottom: 25px;
       position: relative;
       white-space: nowrap;
 
-      @media (max-width: $sm-max) {
+      // @media (max-width: $sm-max) {
         display: flex;
         justify-content: end;
         margin: 0 20px;
-      }
+      // }
     }
 
     .link {

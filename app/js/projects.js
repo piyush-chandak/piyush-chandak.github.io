@@ -3,6 +3,12 @@ window.projects = function() {
   const information = {
     workItems: [
       {
+        name: 'Blockchain System',
+        technologies: ['Hedera', 'Solidity', 'NodeJS'],
+        role: 'Blockchain Developer',
+        detail: `Application which can buy and sell precious material with help of NFT`,
+      },
+      {
         name: 'Aviation Industry System',
         technologies: ['Angular', 'NodeJS', 'GraphQL'],
         role: 'Full Stack',
