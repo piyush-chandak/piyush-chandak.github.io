@@ -9,7 +9,7 @@ window.experience = function() {
             startTime: 'April 2021',
             endTime: 'Present',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
-            information: 'Working on technologies like Angular, Node.js, GraphQL, MySQL, AWS'
+            information: 'Working on technologies like Angular, Node.js, GraphQL, MySQL, AWS, Ethereum, Hedera, Postgress'
           },
           {
             title: 'Software Engineer',
