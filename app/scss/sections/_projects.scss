@@ -1,6 +1,7 @@
 @import '../variables';
 
 #projects {
+  cursor: default;
   
   .work-item {
     padding: 10px 0;
@@ -38,6 +39,7 @@
 
     .detail {
       letter-spacing: 0.7px;
+      font-size: 14px;
     }
 
     .points {

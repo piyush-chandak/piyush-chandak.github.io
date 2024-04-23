@@ -3,26 +3,45 @@ window.projects = function() {
   const information = {
     workItems: [
       {
+        name: 'Chatbot Analytics System',
+        technologies: [common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GPT.LABEL],
+        role: common.ROLES.BACKEND,
+        detail: `AI-driven platform designed to enhance employee engagement and communication within organizations. It helps HR teams identify potential issues, reduce turnover, and foster a positive work environment.`,
+        works: [
+          'Dashboard Experience for different surveys',
+          'Managing access to admin on basis of surveys and chat',
+        ]
+      },
+      {
         name: 'Blockchain System',
-        technologies: ['Hedera', 'Solidity', 'NodeJS'],
-        role: 'Blockchain Developer',
-        detail: `Application which can buy and sell precious material with help of NFT`,
+        technologies: [common.TECHNOLOGIES.HEDERA.LABEL,common.TECHNOLOGIES.SOLIDITY.LABEL, common.TECHNOLOGIES.NODEJS.LABEL],
+        role: common.ROLES.BLOCKCHAIN,
+        detail: `A new way of transforming diamonds into digital assets using blockchain, creating a marketplace for trading, storing in digital wallets, or owning physically`,
+        works: [
+          'Setting up Hedera blockchain network',
+          'Conversion of physical asset into digital asset using NFT',
+          'Creating a marketplace for trade of digital asset',
+        ]
       },
       {
         name: 'Aviation Industry System',
-        technologies: ['Angular', 'NodeJS', 'GraphQL'],
-        role: 'Full Stack',
-        detail: `It's a web based application which help the operator to give private plane and jets on rent.`,
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GRAPHQL.LABEL],
+        role: common.ROLES.FULL_STACK,
+        detail: `An online platform offering personalized travel experiences and activities, by providing private plane and jet rentals, for travelers seeking unique adventures.`,
         works: [
-          'Payment System to transfer money from buyer bank to seller bank',
-          'Invoice generation system which takes the price from customer and design calculated disbursal for each flight'
+          'A payment system facilitating money transfers from buyer to seller bank accounts',
+          'An invoice generation system that calculates customer prices and designs disbursals for each flight'
         ]
       },
       {
         name: 'Marketplace for camps and classes',
-        technologies: ['Ruby on Rails', 'Bootstrap', 'Vanilla JS', 'Mustache', 'Angular'],
-        role: 'Full Stack',
-        detail: `A web based marketplace portal to create and book online/offline camps and classes for children.`,
+        technologies: [
+          common.TECHNOLOGIES.HTML.LABEL, common.TECHNOLOGIES.CSS.LABEL, common.TECHNOLOGIES.BOOTSTRAP.LABEL,
+          common.TECHNOLOGIES.VANILLA_JS.LABEL, common.TECHNOLOGIES.MUSTACHE.LABEL,
+          common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL
+        ],
+        role: common.ROLES.FULL_STACK,
+        detail: `An online platform designed to connect parents with a wide range of kids' activities and camps, offering a comprehensive directory of classes, camps, and workshops for children of all ages.`,
         works: [
           'Search page to get the list of ongoing camp and classes from algolia',
           'Camp and classes pages to show detail with location, photos and reviews',
@@ -34,18 +53,18 @@ window.projects = function() {
       },
       {
         name: 'Comic Publishing Platform',
-        technologies: ['Angular', 'Firebase'],
-        role: 'Frontend Development',
-        detail: `A startup idea to provide a platform for freelancing designer to create comics and publish`,
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        role: common.ROLES.FRONTEND,
+        detail: `A startup idea to create a platform for freelance designers to collaborate on comic creation and publication.`,
         works: [
-          'Ui design to load comics from firebase and represent in more better form',
+          'UI design to load comics from firebase and represent in more better form',
           'Hoisting application on firebase',
         ]
       },
       {
         name: 'Self Assistant System',
-        technologies: ['Ruby on Rails', 'Mustache', 'Angular'],
-        role: 'Full Stack',
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        role: common.ROLES.FULL_STACK,
         detail: `Self motivated idea to create an assistant which can help in daily schedule`,
         works: [
           'Money Tracking System to track daily expenses and visualise show the flow of money',
@@ -55,28 +74,33 @@ window.projects = function() {
         ]
       },
       {
-        name: 'Gym Invoice System',
-        technologies: ['Ruby on Rails', 'Angular'],
-        role: 'Full Stack',
-        detail: 'An application which can generate monthly payement invoice for members'
+        name: 'Gym Management System',
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        role: common.ROLES.FULL_STACK,
+        detail: 'An all-in-one application seamlessly generating monthly payment invoices, birthday reminders, monthly fee notifications, and handling enquiries with an ease.',
+        works: [
+          'Efficiently handle user inquiries and promptly alert admins.',
+          'Simplify member management with birthday reminders and subscription tracking.',
+          'Automate subscription invoicing for seamless payments.',
+        ]
       },
       {
         name: 'Society Management System',
-        technologies: ['Ruby on Rails', 'Bootstrap', 'Vanilla JS', 'Mustache', 'AngularJS'],
-        role: 'Full Stack',
-        detail: `A mumbai based society portal to manage people, invoices and events for society.`,
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        role: common.ROLES.FULL_STACK,
+        detail: `A comprehensive Mumbai-based society portal for management of residents, invoices, and events.`,
         works: [
-          'Storing information for society, members and servents',
-          'Demand draft generation for monthly and expenses',
-          'Accounting pannel to manage the flow of revenue collection',
-          'Event management to notify members for upcomming event and meeting'
+          'An integrated platform facilitating storage of society, member, and servant data.',
+          'Automates demand draft generation for monthly fees and expenses.',
+          'Features an accounting panel for efficient revenue collection tracking.',
+          'Offers event management capabilities, notifying members of upcoming events and meetings.'
         ]
       },
       {
         name: 'Telegram Bot',
-        technologies: ['NodeJS'],
-        role: 'Backend Development',
-        detail: `A telegram based bot which can help in getting random inspiration quotes from third party on request.`
+        technologies: [common.TECHNOLOGIES.NODEJS.LABEL],
+        role: common.ROLES.BACKEND,
+        detail: `A Telegram bot providing random inspiration quotes sourced from third-party platforms upon request.`
       }
     ]
   };

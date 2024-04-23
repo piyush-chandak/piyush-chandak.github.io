@@ -9,8 +9,9 @@
     }
 
     .icon {
-      background-size: cover;
-      background-repeat: repeat;
+      background-position: center;
+      background-repeat: no-repeat; 
+      background-size: contain;
       margin: 10px 15px;
       padding: 30px;
       transition: all 0.3s ease-in-out;

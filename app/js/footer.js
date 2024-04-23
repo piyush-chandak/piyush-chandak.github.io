@@ -7,7 +7,6 @@ window.footer = function() {
       const html = common.renderMustacheToHtml('#footer-template');
       $('#footer').html(html);
     },
-    bindEvents: function() {
-    }
+    bindEvents: function() {}
   };
 }();

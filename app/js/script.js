@@ -1,28 +1,11 @@
-$(document).ready(function(){
-  const pageHeader = window.pageHeader;
-  pageHeader.renderContent();
-  pageHeader.bindEvents();
+$(document).ready(function() {
+  const sections = [
+    window.pageHeader, window.about, window.skills, window.experience,
+    window.projects, window.contact, window.footer
+  ];
 
-  const about = window.about;
-  about.renderContent();
-  about.bindEvents();
-
-  const skills = window.skills;
-  skills.renderContent();
-  skills.bindEvents();
-
-  const experience = window.experience;
-  experience.renderContent();
-  experience.bindEvents();
-
-  const projects = window.projects;
-  projects.renderContent();
-  projects.bindEvents();
-
-  const contact = window.contact;
-  contact.renderContent();
-  contact.bindEvents();
-
-  const footer = window.footer;
-  footer.renderContent();
+  for (const section of sections) {
+    section.renderContent();
+    section.bindEvents();
+  }
 });

@@ -88,6 +88,35 @@ window.common = function() {
     },
     profileImageURL() {
       return '../../images/profile.jpg';
+    },
+    ROLES: {
+      FULL_STACK: 'Full Stack',
+      BACKEND: 'Backend Developer',
+      FRONTEND: 'Frontend Developer',
+      BLOCKCHAIN: 'Blockchain Developer',
+    },
+    TECHNOLOGIES: {
+      HTML: { LABEL: 'HTML5', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png', isSkill: true },
+      CSS: { LABEL: 'CSS', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png', isSkill: true },
+      SASS: { LABEL: 'Sass', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png', isSkill: true },
+      BOOTSTRAP: { LABEL: 'Bootstrap', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png', isSkill: true },
+      VANILLA_JS: { LABEL: 'Vanilla.js' },
+      JAVASCRIPT: { LABEL: 'JavaScript', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png', isSkill: true },
+      JQUERY: { LABEL: 'jQuery', URL: 'https://avatars.githubusercontent.com/u/70142?s=200&v=4', isSkill: true },
+      MUSTACHE: { LABEL: 'Mustache', URL: 'https://avatars.githubusercontent.com/u/197655?s=200&v=4', isSkill: true },
+      ANGULAR: { LABEL: 'Angular', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png', isSkill: true },
+      RUBY_ON_RAILS: { LABEL: 'Ruby on Rails', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png', isSkill: true },
+      NODEJS: { LABEL: 'Node.js', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png', isSkill: true },
+      FIREBASE: { LABEL: 'Firebase', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png', isSkill: true },
+      GRAPHQL: { LABEL: 'GraphQL', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png', isSkill: true },
+      GULP: { LABEL: 'Gulp', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/gulp/gulp.png', isSkill: true },
+      POSTGRESS: { LABEL: 'Postgres', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png', isSkill: true },
+      SQL: { LABEL: 'SQL', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png', isSkill: true },
+      GIT: { LABEL: 'Git', URL: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png', isSkill: true },
+      GITHUB: { LABEL: 'GitHub', URL: 'https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png', isSkill: true },
+      SOLIDITY: { LABEL: 'Solidity', URL: 'https://docs.soliditylang.org/en/latest/_static/img/logo.svg', isSkill: true },
+      HEDERA: { LABEL: 'Hedera', URL: 'https://avatars.githubusercontent.com/u/31002956?s=200&v=4', isSkill: true },
+      GPT: { LABEL: 'GPT', URL: '', isSkill: false },
     }
   }
 }();

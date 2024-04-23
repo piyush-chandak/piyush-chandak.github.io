@@ -6,7 +6,7 @@ window.contact = function() {
       { url: 'mailto:chandakpiyush4@gmail.com', label: 'Email', icon: 'ri-mail-line'},
       { url: 'https://www.linkedin.com/in/piyush-chandak-91a317106', label: 'Linkedin', icon: 'ri-linkedin-fill'},
       { url: 'https://github.com/piyush-chandak', label: 'Github', icon: 'ri-github-fill'},
-      { url: 'https://medium.com/@chandakpiyush4', label: 'Medium', icon: 'ri-medium-line'},
+      // { url: 'https://medium.com/@chandakpiyush4', label: 'Medium', icon: 'ri-medium-line'},
     ]
   }
 

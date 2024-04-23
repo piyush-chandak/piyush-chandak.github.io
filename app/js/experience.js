@@ -6,25 +6,25 @@ window.experience = function() {
         items: [
           {
             title: 'Senior Software Engineer',
-            startTime: 'April 2021',
+            startTime: '11 December 2023',
             endTime: 'Present',
+            place: 'inFeedo.ai, Gurugram',
+            information: 'Working on Node.js and GPT for building chatbot and it\'s analytics dashboard in HR domain.'
+          },
+          {
+            title: 'Senior Software Engineer',
+            startTime: '1 April 2021',
+            endTime: '08 December 2023',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
             information: 'Working on technologies like Angular, Node.js, GraphQL, MySQL, AWS, Ethereum, Hedera, Postgress'
           },
           {
             title: 'Software Engineer',
-            startTime: 'November 2018',
-            endTime: 'March 2021',
+            startTime: '31 March 2021',
+            endTime: '4 June 2018',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
-            information: 'Working on technologies like Mustache, jQuery, Angular, Ruby on Rails, Node.js, Firebase, Postgres'
+            information: 'Working on technologies like HTML, CSS, Sass, Bootstrap, jQuery, Gulp, Mustache, jQuery, Angular, Ruby on Rails, Node.js, Firebase, Postgres'
           },
-          {
-            title: 'Trainee Software Engineer',
-            startTime: 'June 2018',
-            endTime: 'October 2018',
-            place: 'Newput Infotech, Indore, Madhya Pradesh',
-            information: 'Working on technologies like HTML, CSS, Sass, Bootstrap, jQuery, Gulp'
-          }
         ]
       },
       {
