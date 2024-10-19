@@ -4,7 +4,7 @@ window.projects = function() {
     workItems: [
       {
         name: 'Chatbot Analytics System',
-        technologies: [common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GPT.LABEL],
+        technologies: [common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GPT.LABEL, common.TECHNOLOGIES.MYSQL.LABEL],
         role: common.ROLES.BACKEND,
         detail: `AI-driven platform designed to enhance employee engagement and communication within organizations. It helps HR teams identify potential issues, reduce turnover, and foster a positive work environment.`,
         works: [
@@ -14,7 +14,7 @@ window.projects = function() {
       },
       {
         name: 'Blockchain System',
-        technologies: [common.TECHNOLOGIES.HEDERA.LABEL,common.TECHNOLOGIES.SOLIDITY.LABEL, common.TECHNOLOGIES.NODEJS.LABEL],
+        technologies: [common.TECHNOLOGIES.HEDERA.LABEL,common.TECHNOLOGIES.SOLIDITY.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
         role: common.ROLES.BLOCKCHAIN,
         detail: `A new way of transforming diamonds into digital assets using blockchain, creating a marketplace for trading, storing in digital wallets, or owning physically`,
         works: [
@@ -25,7 +25,7 @@ window.projects = function() {
       },
       {
         name: 'Aviation Industry System',
-        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GRAPHQL.LABEL],
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GRAPHQL.LABEL, common.TECHNOLOGIES.MYSQL.LABEL, common.TECHNOLOGIES.MONGODB.LABEL],
         role: common.ROLES.FULL_STACK,
         detail: `An online platform offering personalized travel experiences and activities, by providing private plane and jet rentals, for travelers seeking unique adventures.`,
         works: [
@@ -38,7 +38,8 @@ window.projects = function() {
         technologies: [
           common.TECHNOLOGIES.HTML.LABEL, common.TECHNOLOGIES.CSS.LABEL, common.TECHNOLOGIES.BOOTSTRAP.LABEL,
           common.TECHNOLOGIES.VANILLA_JS.LABEL, common.TECHNOLOGIES.MUSTACHE.LABEL,
-          common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL
+          common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.JAVA.LABEL, common.TECHNOLOGIES.SPRING_BOOT.LABEL,
+          common.TECHNOLOGIES.POSTGRESS.LABEL
         ],
         role: common.ROLES.FULL_STACK,
         detail: `An online platform designed to connect parents with a wide range of kids' activities and camps, offering a comprehensive directory of classes, camps, and workshops for children of all ages.`,
@@ -63,7 +64,7 @@ window.projects = function() {
       },
       {
         name: 'Self Assistant System',
-        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
         role: common.ROLES.FULL_STACK,
         detail: `Self motivated idea to create an assistant which can help in daily schedule`,
         works: [
@@ -75,7 +76,7 @@ window.projects = function() {
       },
       {
         name: 'Gym Management System',
-        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
         role: common.ROLES.FULL_STACK,
         detail: 'An all-in-one application seamlessly generating monthly payment invoices, birthday reminders, monthly fee notifications, and handling enquiries with an ease.',
         works: [
@@ -86,7 +87,7 @@ window.projects = function() {
       },
       {
         name: 'Society Management System',
-        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL],
+        technologies: [common.TECHNOLOGIES.ANGULAR.LABEL, common.TECHNOLOGIES.RUBY_ON_RAILS.LABEL, common.TECHNOLOGIES.FIREBASE.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
         role: common.ROLES.FULL_STACK,
         detail: `A comprehensive Mumbai-based society portal for management of residents, invoices, and events.`,
         works: [

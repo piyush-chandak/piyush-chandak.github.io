@@ -23,7 +23,7 @@ window.experience = function() {
             startTime: '31 March 2021',
             endTime: '4 June 2018',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
-            information: 'Working on technologies like HTML, CSS, Sass, Bootstrap, jQuery, Gulp, Mustache, jQuery, Angular, Ruby on Rails, Node.js, Firebase, Postgres'
+            information: 'Working on technologies like HTML, CSS, Sass, Bootstrap, jQuery, Gulp, Mustache, jQuery, Angular, Ruby on Rails, Java, Spring boot, Node.js, Firebase, Postgres'
           },
         ]
       },
