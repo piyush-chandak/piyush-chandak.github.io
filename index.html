@@ -86,7 +86,10 @@
                       <li class="item">
                         <a href="{{url}}" class="link">
                           <div class="social-link">
-                            <i class="{{icon}}"></i>
+                            {{#icon}}<i class="{{icon}}"></i>{{/icon}}
+                            {{#image}}
+                              <div class="image" style="background-image: url('{{image}}')"></div>
+                            {{/image}}
                           </div> {{label}}
                         </a>
                       </li>
@@ -260,11 +263,11 @@
   <!-- endinject -->
    
   <!-- inject:css -->
-  <link rel="stylesheet" href="../public/css/style-957551379737811.min.css">
+  <link rel="stylesheet" href="../public/css/style-3166802232636845.min.css">
   <!-- endinject -->
    
   <!-- inject:js -->
-  <script src="../public/js/bundle-957551379737811.min.js"></script>
+  <script src="../public/js/bundle-3166802232636845.min.js"></script>
   <!-- endinject -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9S09PR3QYT"></script><script>
     window.dataLayer = window.dataLayer || [];

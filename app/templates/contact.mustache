@@ -47,7 +47,10 @@
                       <li class="item">
                         <a href="{{url}}" class="link">
                           <div class="social-link">
-                            <i class="{{icon}}"></i>
+                            {{#icon}}<i class="{{icon}}"></i>{{/icon}}
+                            {{#image}}
+                              <div class="image" style="background-image: url('{{image}}')"></div>
+                            {{/image}}
                           </div> {{label}}
                         </a>
                       </li>

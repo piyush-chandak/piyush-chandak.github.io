@@ -6,22 +6,29 @@ window.experience = function() {
         items: [
           {
             title: 'Senior Software Engineer',
-            startTime: '11 December 2023',
+            startTime: '4 November 2024',
             endTime: 'Present',
+            place: 'Muoro.ai, Delhi',
+            information: 'Working on technologies like Node.js, GPT, React for building AI driven chatbot.'
+          },
+          {
+            title: 'Senior Software Engineer',
+            startTime: '11 December 2023',
+            endTime: '31 October 2024',
             place: 'inFeedo.ai, Gurugram',
-            information: 'Working on Node.js and GPT for building chatbot and it\'s analytics dashboard in HR domain.'
+            information: 'Working on Node.js and GPT for building employee retention chatbot and it\'s analytics dashboard in HR domain.'
           },
           {
             title: 'Senior Software Engineer',
             startTime: '1 April 2021',
-            endTime: '08 December 2023',
+            endTime: '8 December 2023',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
             information: 'Working on technologies like Angular, Node.js, GraphQL, MySQL, AWS, Ethereum, Hedera, Postgress'
           },
           {
             title: 'Software Engineer',
-            startTime: '31 March 2021',
-            endTime: '4 June 2018',
+            startTime: '4 June 2018',
+            endTime: '31 March 2021',
             place: 'Newput Infotech, Indore, Madhya Pradesh',
             information: 'Working on technologies like HTML, CSS, Sass, Bootstrap, jQuery, Gulp, Mustache, jQuery, Angular, Ruby on Rails, Java, Spring boot, Node.js, Firebase, Postgres'
           },

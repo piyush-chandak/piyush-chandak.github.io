@@ -3,6 +3,30 @@ window.projects = function() {
   const information = {
     workItems: [
       {
+        name: 'AI Chatbot for Team Builder',
+        technologies: [common.TECHNOLOGIES.NODEJS.LABEL,common.TECHNOLOGIES.MYSQL.LABEL,common.TECHNOLOGIES.REACT.LABEL],
+        role: common.ROLES.FULL_STACK,
+        detail: `AI-powered chatbot that gathers user information, analyzes requirements, and interacts with GPT APIs to provide summaries and build effective teams.`,
+        works: [
+          'AI interactive chatbot for gathering information and building the team',
+          'Analysing and Interacting with LLM for user requirement',
+          'Interacting with GPT api\'s summarizing the user requirement'
+        ]
+      },
+      {
+        name: 'Blockchain based Music Portal',
+        technologies: [common.TECHNOLOGIES.POLYGON.LABEL,common.TECHNOLOGIES.SOLIDITY.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
+        role: common.ROLES.BLOCKCHAIN,
+        detail: `A platform for collaborating with music creators, featuring a blockchain-based royalty distribution system and a marketplace for trading tokens.`,
+        works: [
+          'Setting up Polygon blockchain network',
+          'Conversion of music track into ERC-1155 NFT',
+          'Building Wallet for USDC and internal token transfer',
+          'Distributing Royalities to owners of track in USDC',
+          'Creating a marketplace for trade of music track',
+        ]
+      },
+      {
         name: 'Chatbot Analytics System',
         technologies: [common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.GPT.LABEL, common.TECHNOLOGIES.MYSQL.LABEL],
         role: common.ROLES.BACKEND,
@@ -13,7 +37,7 @@ window.projects = function() {
         ]
       },
       {
-        name: 'Blockchain System',
+        name: 'Blockchain based Diamond Trading System',
         technologies: [common.TECHNOLOGIES.HEDERA.LABEL,common.TECHNOLOGIES.SOLIDITY.LABEL, common.TECHNOLOGIES.NODEJS.LABEL, common.TECHNOLOGIES.POSTGRESS.LABEL],
         role: common.ROLES.BLOCKCHAIN,
         detail: `A new way of transforming diamonds into digital assets using blockchain, creating a marketplace for trading, storing in digital wallets, or owning physically`,

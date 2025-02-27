@@ -48,7 +48,7 @@
       display: flex;
       font-weight: 600;
       text-decoration: none;
-      text-transform: capitalize;
+      // text-transform: capitalize;
 
       @media (max-width: $sm-max) {
         flex-direction: column;
@@ -70,6 +70,13 @@
 
       @media (max-width: $sm-max) {
         margin-right: 0;
+      }
+
+      .image {
+        padding: 13px 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }
